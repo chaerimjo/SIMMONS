@@ -13,7 +13,7 @@ font-family: "Raleway", sans-serif;
 
 /* 레이아웃 */
 .container{
-    width: var(--container);
+    width: var(--container); 
     margin: 0 auto;
     height: 100px;
     width: 100%;
