@@ -53,7 +53,7 @@ a{
     display: flex;
 }
 .top_nav nav{
-    float: right;
+    float: right ;
     top: 0;
 }
 .top_nav{
