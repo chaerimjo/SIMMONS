@@ -15,38 +15,58 @@ font-family: "Raleway", sans-serif;
 .container{
     width: var(--container);
     margin: 0 auto;
+    height: 100px;
+    width: 100%;
+    background: #ebebeb;
 }
 
 /* 폰트*/
 
 /* HEADER */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container .logo{
+    display: inline-block;
+}
 a{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 .logo a{
-    background: url(/SIMMONS/images/header_logo.png)no-repeat;
-    display: inline-block;
-    width: 79px;
-    height: 52px;
+    background: url(/images/header_logo.png)no-repeat;
+    display: block;
+    width: 116px;
+    height: 35px;
     text-indent: -9999em;
-    margin-left: 294px;
 }
-header nav{
+.box{
+    margin-top: 45px;
+}
+.box > ul ul{
+    display: none; 
+}
+
+.top_nav ul{
+    display: flex;
+}
+.top_nav nav{
     float: right;
-    margin-right: 394px;
+    top: 0;
 }
 .top_nav{
     display: flex;
     justify-content: space-between;
 }
-.top_nav ul{
-    display: flex;
+
+.main_menu{
     gap: 60px;
-    list-style: none;
+    margin-right: 394px;
 }
-.main_menu ul li{
-    display: none;
+.dropdown i{
+    gap: 42px;
 }
 
 /* 링크 버튼 */
