@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMMONS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
       <div class="top_nav">
         <div class="container">
-            <h1 class="logo"><a href=""></a>SIMMONS</h1>
+            <h1 class="logo"><a href="">SIMMONS</a></h1>
             <nav>
                 <ul class="main_menu">
                     <li><a href="">Product</a>
@@ -42,26 +40,25 @@
                             <li>SIMMONS IN HOTEL</li>
                         </ul>
                     </li>
-                </ul>
-                <div class="dropdown">
-                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <div class="dropdown">
+                    <a href=""><i class="fa-solid fa-user"></i>로그인</a>
                     <ul>
                         <li>Login</li>
                         <li>Logout</li>
                     </ul>
                 </div>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i>카트</a>
+                </ul>
             </nav>
         </div>
       </div>  
-      <div class="slidewrapper">
+      <div class="slidewrapper container">
         <div class="slides">
             <ul>
                 <li>
                     <figure>
                         <!-- <img src="images/header_banner_hotel_img.jpg" alt="hotel img"> -->
                         <figcaption>
-                        </button>
                         <h2>호텔은 집을 떠나 만나는 또 다른 집</h2>
                         <p>
                             호텔은 집을 떠나 만나는 또 다른 집
@@ -74,7 +71,6 @@
                     <figure>
                         <!-- <img src="images/banner2.png" alt="hotel img"> -->
                         <figcaption>
-                        </button>
                         <h2>편안함의 새로운 기준, 감성과학</h2>
                         <p>
                             시몬스는 침대를 사용하는 사람의 신체는 물론 그 마음과 섬세한 감정까지 편안함을 누릴 수 있도록
@@ -89,7 +85,6 @@
                     <figure>
                         <!-- <img src="images/banner3.png" alt="hotel img"> -->
                         <figcaption>
-                        </button>
                         <h2>다양한 내장재의 조합으로 사용자의 감성을 만족시키는 최적의 편안함</h2>
                         <p>
                             밀도, 강도, 성질, 촉감의 미세한 차이를 지닌 50여 종의 프리미엄 내장재를
@@ -107,28 +102,28 @@
     </header>
     <main>
         <div class="search">
-            <form action="">
-                <li>전체사이즈 <button><i class="fa-solid fa-caret-down"></i></button>
-                    <ul>
-                        <li data-value="GK/그레이트킹">GK/그레이트킹</li>
-                        <li data-value="KK/킹오브킹">KK/킹오브킹</li>
-                        <li data-value="LK/라지킹">LK/라지킹</li>
-                        <li data-value="QE/퀸">QE/퀸</li>
-                        <li data-value="SS/슈퍼싱글">SS/슈퍼싱글</li>
-                    </ul>
-                </li>
-                <li>전체경도 <button><i class="fa-solid fa-caret-up"></i></button>
-                    <ul>
-                        <li data-value="P CLASS/하드타입">P CLASS/하드타입</li>
-                        <li data-value="G CLASS/레귤러타입">G CLASS/레귤러타입</li>
-                        <li data-value="W CLASS/소프트타입">W CLASS/소프트타입</li>
-                    </ul>
-                </li>
+            <form action="#">
+                <label for="size"></label>
+                <select name="size" id="size">
+                    <option value="전체사이즈">전체사이즈</option>
+                    <option value="GK/그레이트킹">GK/그레이트킹</option>
+                    <option value="LK/라지킹">LK/라지킹</option>
+                    <option value="QE/퀸">QE/퀸</option>
+                    <option value="SS/슈퍼싱글">SS/슈퍼싱글</option>
+                </select>
+        <div class="hardness">
+                <label for="hardness"></label>
+                <select name="hardness" id="hardness">
+                    <option value="전체경도">전체경도</option>
+                    <option value="P CLASS/하드타입">P CLASS/하드타입</option>
+                    <option value="G CLASS/레귤러타입">G CLASS/레귤러타입</option>
+                    <option value="W CLASS/소프트타입">W CLASS/소프트타입</option>
+                </select>
+                </div>
+
                 <input type="text" placeholder="찾으시는 상품을 검색하세요.">
-                <label for="" ></label>
-                <button>
-                    돋보기
-                </button>
+
+                <button>돋보기</button>
             </form>
         </div>
         <section class="product_slidewrapper">
@@ -137,7 +132,7 @@
             <ul class="mattress_list">
                 <li>
                     <figure>
-                        <img src="" alt=""><!-- img mattress 1 -->
+                        <!-- <img src="" alt="">img mattress 1  -->
                         <figcaption>
                             <span>Beautyrest henry</span>
                             <span>0,000$</span>
@@ -151,7 +146,7 @@
             <ul class="frame_list">
                 <li>
                     <figure>
-                        <img src="" alt="">
+                        <!-- <img src="" alt=""> -->
                         <figcaption>
                             <span>Beautyrest henry</span>
                             <span>0,000$</span>
@@ -165,7 +160,7 @@
             <ul class="roomset_list">
                 <li>
                     <figure>
-                        <img src="" alt="">
+                        <!-- <img src="" alt=""> -->
                         <figcaption>
                             <span>Beautyrest henry</span>
                             <span>0,000$</span>
@@ -182,7 +177,7 @@
                 <li class="tab_link" data-value="tab-1">
                     Beautyrest
                     <figure>
-                        <img src="" alt="">
+                        <!-- <img src="" alt=""> -->
                         <figcaption>
                             <p>SIMMONS</p>
                             <h3>Beautyrest</h3>
@@ -191,8 +186,8 @@
                             <h3>Anniversary</h3>
                         </figcaption>
                     </figure>
-                </ul>
                 </li>
+                </ul>
         </section>
     </main> 
     <footer>
