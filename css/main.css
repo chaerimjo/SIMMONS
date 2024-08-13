@@ -50,7 +50,7 @@ a{
 }
 
 .top_nav ul{
-    display: flex;
+    display: flex ;
 }
 .top_nav nav{
     float: right ;
